@@ -37,6 +37,15 @@ plugins:
 postcss:
   cache: false
 
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+
+picture:
+  source: "assets/images"
+
 # Theme settings
 # theme: jekyll-theme-minimal
 

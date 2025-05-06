@@ -11,6 +11,7 @@ gem 'jekyll', '~> 4.2.0'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem 'jekyll-feed', '~> 0.12'
+  gem 'jekyll_picture_tag', '~> 2.0'
   gem 'jekyll-postcss'
 end
 
@@ -30,4 +31,4 @@ gem 'http_parser.rb', '~> 0.6.0', platforms: [:jruby]
 
 gem 'webrick', '~> 1.8'
 
-gem "jekyll-sitemap", "~> 1.4"
+gem 'jekyll-sitemap', '~> 1.4'
