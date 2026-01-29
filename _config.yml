@@ -31,7 +31,7 @@ github_username:  lodestone-labs
 # Build settings
 plugins:
   - jekyll-feed
-  - jekyll-postcss
+  - jekyll-postcss-v2
   - jekyll-sitemap
 
 postcss:

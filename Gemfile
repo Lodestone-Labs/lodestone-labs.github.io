@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # ERROR: Currently, using the github-pages gem installs a LOT of themes, which
 # postcss-import then tries to run on (not sure why).
-gem 'jekyll', '~> 4.2.0'
+gem 'jekyll', '~> 4.3.0'
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -12,7 +12,7 @@ gem 'jekyll', '~> 4.2.0'
 group :jekyll_plugins do
   gem 'jekyll-feed', '~> 0.12'
   gem 'jekyll_picture_tag', '~> 2.0'
-  gem 'jekyll-postcss'
+  gem 'jekyll-postcss-v2'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
