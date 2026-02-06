@@ -8,151 +8,148 @@
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   </head>
   <body>
-    <h1 class="hidden">{{ page.title }}</h1>
-    <main class="container flex px-5 mx-auto mt-28">
-      {{ content }}
-      <div class="mx-auto">
-        <div class="container">
-          {% include navigation.html %}
+    {% include navigation.html %}
 
-          <div id="home" class="flex items-center justify-center h-screen bg-cover bg-center bg-no-repeat relative" style="background-image: url('{{ "/assets/images/hero.jpg" | relative_url }}');">
-            <div class="absolute inset-0 bg-black/50"></div>
-            <div class="flex-col w-full px-10 relative z-10">
-              <h1 class="mb-5 text-4xl font-extrabold leading-none tracking-tight text-center text-white md:text-5xl lg:text-6xl">
-                Navigate the future
-              </h1>
-              <p class="mb-6 text-lg font-normal text-center text-gray-200 lg:text-xl sm:px-16 xl:px-48">
-              <mark class="px-2 text-white rounded bg-neutral-800 dark:bg-neutral-500">Lodestone Labs</mark>
-              helps you focus on the innovations that unlock long-term value.
-              </p>
-            </div>
-          </div>
+    <section id="home" class="flex items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat relative" style="background-image: url('{{ "/assets/images/hero.jpg" | relative_url }}');">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="flex-col w-full px-10 relative z-10 pt-16">
+        <h1 class="mb-5 text-4xl font-extrabold leading-none tracking-tight text-center text-white md:text-5xl lg:text-6xl">
+          Navigate the future
+        </h1>
+        <p class="mb-6 text-lg font-normal text-center text-gray-200 lg:text-xl sm:px-16 xl:px-48">
+          <mark class="px-2 text-white rounded bg-neutral-800 dark:bg-neutral-500">Lodestone Labs</mark>
+          helps you focus on the innovations that unlock long-term value.
+        </p>
+      </div>
+    </section>
 
-          <div class="w-full">
-            <svg class="w-full h-16 text-gray-100" viewBox="0 0 1440 100" preserveAspectRatio="none" fill="currentColor">
-              <path d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z"></path>
-            </svg>
-          </div>
+    <div class="w-full">
+      <svg class="w-full h-16 text-gray-100" viewBox="0 0 1440 100" preserveAspectRatio="none" fill="currentColor">
+        <path d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z"></path>
+      </svg>
+    </div>
 
-          <div id="about" class="bg-gray-100 px-10 py-12">
-            <h2 class="text-4xl font-extrabold dark:text-white">About</h2>
+    <section id="about" class="bg-gray-100 py-12">
+      <div class="max-w-screen-xl mx-auto px-10">
+        <h2 class="text-4xl font-extrabold dark:text-white">About</h2>
 
-            <p class="my-4 text-lg font-normal text-gray-500 dark:text-gray-400">
-            Lodestone Labs was founded in 2024 by Tristan Potter to help Canadian small businesses navigate the increasingly complex and fast-moving world of internet technologies, with a specific focus on e-commerce and related tools.
+        <p class="my-4 text-lg font-normal text-gray-500 dark:text-gray-400">
+          Lodestone Labs was founded in 2024 by Tristan Potter to help Canadian small businesses navigate the increasingly complex and fast-moving world of internet technologies, with a specific focus on e-commerce and related tools.
+        </p>
+
+        <h3 class="text-2xl font-bold dark:text-white mt-6 mb-3">What We've Done</h3>
+        <ul class="space-y-2 text-lg text-gray-500 dark:text-gray-400 list-disc list-inside">
+          <li>Advised early-stage retail brands on e-commerce architecture, tooling selection, and build-vs-buy decisions, balancing cost, scalability, and operational complexity.</li>
+          <li>Led a platform migration from a custom e-commerce stack to Shopify, reducing ongoing development costs, improving SEO performance, and accelerating content updates for non-technical teams.</li>
+          <li>Developed custom email templates and tooling for a daily fintech newsletter.</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold dark:text-white mt-6 mb-3">Our Approach</h3>
+        <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
+          We believe businesses are ultimately made of people who need to do their work each day as easily as possible. That means choosing solutions that minimize technical complexity and ongoing maintenance—even if it means higher day-to-day costs for off-the-shelf products. Hiring outside developers shouldn't be a recurring expense for most small businesses.
+        </p>
+
+        <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
+          Every engagement starts with a bird's-eye view of your goals and constraints. From there, we research options thoroughly and present them clearly—often in written reports—so you can make informed decisions. We're transparent about tradeoffs, ambiguity, and uncertainty. Business owners should understand the what and why of every recommendation.
+        </p>
+
+        <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
+          Communication is constant. We're patient when introducing new concepts or technologies, and we tailor our explanations to your level of technical familiarity. The most valuable thing we offer isn't just implementation—it's perspective, research, and the ability to translate complex options into clear choices.
+        </p>
+      </div>
+    </section>
+
+    <div class="w-full bg-gray-100">
+      <svg class="w-full h-16 text-white" viewBox="0 0 1440 100" preserveAspectRatio="none" fill="currentColor">
+        <path d="M0,50 C360,0 1080,100 1440,50 L1440,100 L0,100 Z"></path>
+      </svg>
+    </div>
+
+    <section id="services" class="py-12">
+      <div class="max-w-screen-xl mx-auto px-10">
+        <h2 class="text-4xl font-extrabold dark:text-white">Services</h2>
+        <p class="my-4 text-lg font-normal text-gray-500 dark:text-gray-400">
+          We offer a range of services to help small businesses make smart technology decisions and get the most out of their tools.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 mt-6">
+          <div class="p-6 bg-gray-50 rounded-lg dark:bg-gray-800">
+            <h3 class="text-xl font-bold dark:text-white mb-2">E-Commerce Consulting</h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              Architecture planning, tooling selection, and build-vs-buy analysis. We help you balance cost, scalability, and operational complexity to find the right solution for your business.
             </p>
+          </div>
 
-            <h3 class="text-2xl font-bold dark:text-white mt-6 mb-3">What We've Done</h3>
-            <ul class="space-y-2 text-lg text-gray-500 dark:text-gray-400 list-disc list-inside">
-              <li>Advised early-stage retail brands on e-commerce architecture, tooling selection, and build-vs-buy decisions, balancing cost, scalability, and operational complexity.</li>
-              <li>Led a platform migration from a custom e-commerce stack to Shopify, reducing ongoing development costs, improving SEO performance, and accelerating content updates for non-technical teams.</li>
-              <li>Developed custom email templates and tooling for a daily fintech newsletter.</li>
-            </ul>
-
-            <h3 class="text-2xl font-bold dark:text-white mt-6 mb-3">Our Approach</h3>
-            <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
-            We believe businesses are ultimately made of people who need to do their work each day as easily as possible. That means choosing solutions that minimize technical complexity and ongoing maintenance—even if it means higher day-to-day costs for off-the-shelf products. Hiring outside developers shouldn't be a recurring expense for most small businesses.
-            </p>
-
-            <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
-            Every engagement starts with a bird's-eye view of your goals and constraints. From there, we research options thoroughly and present them clearly—often in written reports—so you can make informed decisions. We're transparent about tradeoffs, ambiguity, and uncertainty. Business owners should understand the what and why of every recommendation.
-            </p>
-
-            <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
-            Communication is constant. We're patient when introducing new concepts or technologies, and we tailor our explanations to your level of technical familiarity. The most valuable thing we offer isn't just implementation—it's perspective, research, and the ability to translate complex options into clear choices.
+          <div class="p-6 bg-gray-50 rounded-lg dark:bg-gray-800">
+            <h3 class="text-xl font-bold dark:text-white mb-2">Shopify Development</h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              Custom theme development and Shopify app development. Whether you need a tailored storefront or specialized functionality, we build solutions that fit your brand and workflow.
             </p>
           </div>
 
-          <div class="w-full bg-gray-100">
-            <svg class="w-full h-16 text-white" viewBox="0 0 1440 100" preserveAspectRatio="none" fill="currentColor">
-              <path d="M0,50 C360,0 1080,100 1440,50 L1440,100 L0,100 Z"></path>
-            </svg>
-          </div>
-
-          <div id="services" class="px-10 py-12">
-            <h2 class="text-4xl font-extrabold dark:text-white">Services</h2>
-            <p class="my-4 text-lg font-normal text-gray-500 dark:text-gray-400">
-            We offer a range of services to help small businesses make smart technology decisions and get the most out of their tools.
+          <div class="p-6 bg-gray-50 rounded-lg dark:bg-gray-800">
+            <h3 class="text-xl font-bold dark:text-white mb-2">Platform Migrations</h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              Seamless transitions from custom or legacy e-commerce stacks to modern platforms like Shopify. We reduce development costs, improve SEO, and empower non-technical teams to manage content.
             </p>
-
-            <div class="grid md:grid-cols-2 gap-6 mt-6">
-              <div class="p-6 bg-gray-50 rounded-lg dark:bg-gray-800">
-                <h3 class="text-xl font-bold dark:text-white mb-2">E-Commerce Consulting</h3>
-                <p class="text-gray-500 dark:text-gray-400">
-                Architecture planning, tooling selection, and build-vs-buy analysis. We help you balance cost, scalability, and operational complexity to find the right solution for your business.
-                </p>
-              </div>
-
-              <div class="p-6 bg-gray-50 rounded-lg dark:bg-gray-800">
-                <h3 class="text-xl font-bold dark:text-white mb-2">Shopify Development</h3>
-                <p class="text-gray-500 dark:text-gray-400">
-                Custom theme development and Shopify app development. Whether you need a tailored storefront or specialized functionality, we build solutions that fit your brand and workflow.
-                </p>
-              </div>
-
-              <div class="p-6 bg-gray-50 rounded-lg dark:bg-gray-800">
-                <h3 class="text-xl font-bold dark:text-white mb-2">Platform Migrations</h3>
-                <p class="text-gray-500 dark:text-gray-400">
-                Seamless transitions from custom or legacy e-commerce stacks to modern platforms like Shopify. We reduce development costs, improve SEO, and empower non-technical teams to manage content.
-                </p>
-              </div>
-
-              <div class="p-6 bg-gray-50 rounded-lg dark:bg-gray-800">
-                <h3 class="text-xl font-bold dark:text-white mb-2">Custom Development</h3>
-                <p class="text-gray-500 dark:text-gray-400">
-                Email templates, internal tooling, and integrations. We build the pieces that connect your systems and automate repetitive work.
-                </p>
-              </div>
-
-              <div class="p-6 bg-gray-50 rounded-lg dark:bg-gray-800">
-                <h3 class="text-xl font-bold dark:text-white mb-2">Technical Research</h3>
-                <p class="text-gray-500 dark:text-gray-400">
-                In-depth reports comparing technology options with clear pros, cons, and recommendations. Understand your choices before committing to a direction.
-                </p>
-              </div>
-
-              <div class="p-6 bg-gray-50 rounded-lg dark:bg-gray-800">
-                <h3 class="text-xl font-bold dark:text-white mb-2">Process Optimization</h3>
-                <p class="text-gray-500 dark:text-gray-400">
-                Identifying inefficiencies and opportunities to increase productivity in your teams and systems. Sometimes the biggest wins come from improving what you already have.
-                </p>
-              </div>
-            </div>
           </div>
 
-          <div class="w-full">
-            <svg class="w-full h-16 text-gray-100" viewBox="0 0 1440 100" preserveAspectRatio="none" fill="currentColor">
-              <path d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z"></path>
-            </svg>
+          <div class="p-6 bg-gray-50 rounded-lg dark:bg-gray-800">
+            <h3 class="text-xl font-bold dark:text-white mb-2">Custom Development</h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              Email templates, internal tooling, and integrations. We build the pieces that connect your systems and automate repetitive work.
+            </p>
           </div>
 
-          <section id="contact" class="bg-gray-100 dark:bg-gray-800 py-12 px-10">
-            <div class="mx-auto max-w-screen-md">
-              <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white">Get In Touch</h2>
-              <p class="mb-8 font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl">Have a project in mind or want to discuss how we can help your business? Reach out and let's start a conversation.</p>
-              <form action="https://api.web3forms.com/submit" method="POST" class="space-y-8">
-                <input type="hidden" name="access_key" value="923c7e2a-89bc-47ee-b31e-ba7f23ad5276">
-                <input type="hidden" name="from_name" value="Lodestone Labs">
-                <input type="hidden" name="redirect" value="{{ site.url | default: '/' }}">
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                <div>
-                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-                  <input type="email" name="email" id="email" class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="you@company.com" required>
-                </div>
-                <div>
-                  <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-                  <input type="text" name="subject" id="subject" class="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="What can we help you with?" required>
-                </div>
-                <div class="sm:col-span-2">
-                  <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-                  <textarea name="message" id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Tell us about your project or question..."></textarea>
-                </div>
-                <button type="submit" class="px-5 py-3 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send message</button>
-              </form>
-            </div>
-          </section>
+          <div class="p-6 bg-gray-50 rounded-lg dark:bg-gray-800">
+            <h3 class="text-xl font-bold dark:text-white mb-2">Technical Research</h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              In-depth reports comparing technology options with clear pros, cons, and recommendations. Understand your choices before committing to a direction.
+            </p>
+          </div>
+
+          <div class="p-6 bg-gray-50 rounded-lg dark:bg-gray-800">
+            <h3 class="text-xl font-bold dark:text-white mb-2">Process Optimization</h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              Identifying inefficiencies and opportunities to increase productivity in your teams and systems. Sometimes the biggest wins come from improving what you already have.
+            </p>
+          </div>
         </div>
       </div>
-    </main>
+    </section>
+
+    <div class="w-full">
+      <svg class="w-full h-16 text-gray-100" viewBox="0 0 1440 100" preserveAspectRatio="none" fill="currentColor">
+        <path d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z"></path>
+      </svg>
+    </div>
+
+    <section id="contact" class="bg-gray-100 dark:bg-gray-800 py-12">
+      <div class="max-w-screen-md mx-auto px-10">
+        <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white">Get In Touch</h2>
+        <p class="mb-8 font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl">Have a project in mind or want to discuss how we can help your business? Reach out and let's start a conversation.</p>
+        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-8">
+          <input type="hidden" name="access_key" value="923c7e2a-89bc-47ee-b31e-ba7f23ad5276">
+          <input type="hidden" name="from_name" value="Lodestone Labs">
+          <input type="hidden" name="redirect" value="{{ site.url | default: '/' }}">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          <div>
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+            <input type="email" name="email" id="email" class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="you@company.com" required>
+          </div>
+          <div>
+            <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+            <input type="text" name="subject" id="subject" class="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="What can we help you with?" required>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+            <textarea name="message" id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Tell us about your project or question..."></textarea>
+          </div>
+          <button type="submit" class="px-5 py-3 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send message</button>
+        </form>
+      </div>
+    </section>
+
     <footer class="bg-gray-900 text-gray-400 py-8 px-10">
       <div class="max-w-screen-xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
         <p class="text-sm">&copy; {{ 'now' | date: '%Y' }} Lodestone Labs. All rights reserved.</p>
