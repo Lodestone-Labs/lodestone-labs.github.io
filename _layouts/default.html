@@ -15,7 +15,7 @@
         <div class="container">
           {% include navigation.html %}
 
-          <div id="home" class="flex items-center justify-center h-96">
+          <div id="home" class="flex items-center justify-center h-96 px-10">
             <div class="flex-col w-full">
               <h1 class="mb-5 text-4xl font-extrabold leading-none tracking-tight text-center text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
                 Navigate the future
@@ -27,10 +27,14 @@
             </div>
           </div>
 
-          <div class="px-10">
-            <hr class="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700">
+          <div class="w-full">
+            <svg class="w-full h-16 text-gray-100" viewBox="0 0 1440 100" preserveAspectRatio="none" fill="currentColor">
+              <path d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z"></path>
+            </svg>
+          </div>
 
-            <h2 id="about" class="text-4xl font-extrabold dark:text-white">About</h2>
+          <div id="about" class="bg-gray-100 px-10 py-12">
+            <h2 class="text-4xl font-extrabold dark:text-white">About</h2>
 
             <p class="my-4 text-lg font-normal text-gray-500 dark:text-gray-400">
             Lodestone Labs was founded in 2024 by Tristan Potter to help Canadian small businesses navigate the increasingly complex and fast-moving world of internet technologies, with a specific focus on e-commerce and related tools.
@@ -55,8 +59,16 @@
             <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
             Communication is constant. We're patient when introducing new concepts or technologies, and we tailor our explanations to your level of technical familiarity. The most valuable thing we offer isn't just implementation—it's perspective, research, and the ability to translate complex options into clear choices.
             </p>
+          </div>
 
-            <h2 id="services" class="text-4xl font-extrabold dark:text-white mt-8">Services</h2>
+          <div class="w-full bg-gray-100">
+            <svg class="w-full h-16 text-white" viewBox="0 0 1440 100" preserveAspectRatio="none" fill="currentColor">
+              <path d="M0,50 C360,0 1080,100 1440,50 L1440,100 L0,100 Z"></path>
+            </svg>
+          </div>
+
+          <div id="services" class="px-10 py-12">
+            <h2 class="text-4xl font-extrabold dark:text-white">Services</h2>
             <p class="my-4 text-lg font-normal text-gray-500 dark:text-gray-400">
             We offer a range of services to help small businesses make smart technology decisions and get the most out of their tools.
             </p>
@@ -104,33 +116,39 @@
                 </p>
               </div>
             </div>
-
-            <section id="contact" class="bg-white dark:bg-gray-900 mt-8">
-              <div class="px-4 py-8 mx-auto lg:py-16 max-w-screen-md">
-                <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white">Get In Touch</h2>
-                <p class="mb-8 font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl">Have a project in mind or want to discuss how we can help your business? Reach out and let's start a conversation.</p>
-                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-8">
-                  <input type="hidden" name="access_key" value="923c7e2a-89bc-47ee-b31e-ba7f23ad5276">
-                  <input type="hidden" name="from_name" value="Lodestone Labs">
-                  <input type="hidden" name="redirect" value="{{ site.url | default: '/' }}">
-                  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                  <div>
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-                    <input type="email" name="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="you@company.com" required>
-                  </div>
-                  <div>
-                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-                    <input type="text" name="subject" id="subject" class="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="What can we help you with?" required>
-                  </div>
-                  <div class="sm:col-span-2">
-                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-                    <textarea name="message" id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Tell us about your project or question..."></textarea>
-                  </div>
-                  <button type="submit" class="px-5 py-3 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send message</button>
-                </form>
-              </div>
-            </section>
           </div>
+
+          <div class="w-full">
+            <svg class="w-full h-16 text-gray-100" viewBox="0 0 1440 100" preserveAspectRatio="none" fill="currentColor">
+              <path d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z"></path>
+            </svg>
+          </div>
+
+          <section id="contact" class="bg-gray-100 dark:bg-gray-800 py-12 px-10">
+            <div class="mx-auto max-w-screen-md">
+              <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white">Get In Touch</h2>
+              <p class="mb-8 font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl">Have a project in mind or want to discuss how we can help your business? Reach out and let's start a conversation.</p>
+              <form action="https://api.web3forms.com/submit" method="POST" class="space-y-8">
+                <input type="hidden" name="access_key" value="923c7e2a-89bc-47ee-b31e-ba7f23ad5276">
+                <input type="hidden" name="from_name" value="Lodestone Labs">
+                <input type="hidden" name="redirect" value="{{ site.url | default: '/' }}">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <div>
+                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                  <input type="email" name="email" id="email" class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="you@company.com" required>
+                </div>
+                <div>
+                  <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                  <input type="text" name="subject" id="subject" class="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="What can we help you with?" required>
+                </div>
+                <div class="sm:col-span-2">
+                  <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                  <textarea name="message" id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Tell us about your project or question..."></textarea>
+                </div>
+                <button type="submit" class="px-5 py-3 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send message</button>
+              </form>
+            </div>
+          </section>
         </div>
       </div>
     </main>
