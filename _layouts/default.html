@@ -15,12 +15,13 @@
         <div class="container">
           {% include navigation.html %}
 
-          <div id="home" class="flex items-center justify-center h-96 px-10">
-            <div class="flex-col w-full">
-              <h1 class="mb-5 text-4xl font-extrabold leading-none tracking-tight text-center text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+          <div id="home" class="flex items-center justify-center h-screen bg-cover bg-center bg-no-repeat relative" style="background-image: url('{{ "/assets/images/hero.jpg" | relative_url }}');">
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="flex-col w-full px-10 relative z-10">
+              <h1 class="mb-5 text-4xl font-extrabold leading-none tracking-tight text-center text-white md:text-5xl lg:text-6xl">
                 Navigate the future
               </h1>
-              <p class="mb-6 text-lg font-normal text-center text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+              <p class="mb-6 text-lg font-normal text-center text-gray-200 lg:text-xl sm:px-16 xl:px-48">
               <mark class="px-2 text-white rounded bg-neutral-800 dark:bg-neutral-500">Lodestone Labs</mark>
               helps you focus on the innovations that unlock long-term value.
               </p>
